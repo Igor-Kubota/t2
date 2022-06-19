@@ -27,7 +27,13 @@ export class NoticiasApiService {
       texto: texto,
       titulo: titulo
     };
-    this._http.post<{mensagem: string}>(this.noticiasApi, noticia).subscribe((dados) => console.log(dados))
+    this._http.post<{mensagem: string}>(this.noticiasApi, noticia).subscribe((dados) => {
+      console.log(dados)
+
+    }
+    
+    
+    )
   }
 
 }
